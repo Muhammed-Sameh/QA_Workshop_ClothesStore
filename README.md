@@ -1,25 +1,12 @@
 # QA_Workshop_ClothesStore
 Online Clothes Store
 Table of Contents
-1. [EXECUTIVE SUMMARY](https://www.youtube.com/watch?v=mSvpoyUIeyo&t=4s&ab_channel=%D9%86%D8%B8%D8%A7%D9%85Nezam)
-2. PROJECT MANAGEMENT	
-2.1. PROJECT SCOPE	
-2.2. MILESTONE LIST	
-3. SCHEDULE MANAGEMENT PLAN	
-4. QUALITY MANAGEMENT PLAN	
-5. CHANGE MANAGEMENT PLAN	
-5.1 CHANGE CUSTOMER REQUEST	
-6. COMMUNICATIONS MANAGEMENT PLAN	
-6.1 ROLES AND RESPONSIBILITIES	
-6.2 COMMUNICATION PLAN TABLE	
-7. RESOURCE MANAGEMENT PLAN	
-7.1 TOOL TABLE	
-8. ESCALATION MANAGEMENT PLAN	
-9. ESTIMATE TIME AND EFFORT MANAGEMENT PLAN	
-10. RISK MANAGEMENT PLAN	
-11. DECISION TECHNIQUE	
-12. PROBLEM HANDLING	
-13. REVIEW PROCESS	
-14. APPENDICES	
+2. [Project management plan](https://docs.google.com/document/d/1-DV88e92eGBWfB3F4MCUuJgeDgRwNaY-u095N9Kb-rU/edit)
+3. [CHANGE CUSTOMER REQUEST](https://docs.google.com/document/d/17HoHmKAeC5BguQZUUWUySDf0TTZ4YQqrCTLJQkQ2GbQ/edit#heading=h.gjdgxs)
+4. [Problem statement template](https://docs.google.com/document/d/18TFlSD-rIV5x4SngoB20Y9RubpmzK3ayeIGm-PG1YIA/edit?pli=1#heading=h.gjdgxs)
+5. [SIQ](https://docs.google.com/spreadsheets/d/1oQM4MDh--ATxzFeeeNISrZPVz3YLMTDJGJBv0THG1oQ/edit#gid=0)
+6. [Timeline and Task Monitor](https://www.taskade.com/d/3uyN1jPwH7qgDxFk?share=edit&edit=2yEXnwHgHaDqieTu&as=list)
+7. [Configuration Item List (CIL)](https://docs.google.com/spreadsheets/d/1CNsIgTRqDG56GuB5RgAzR-X8vvPCIPIAIXA7jQul5sA/edit#gid=0)
+8. [Configuration Management Plan](https://docs.google.com/document/d/172IMZ0cSYJTtWV85ng__dxY0uzfY9CUrXccMG1uMtS0/edit)
 
 
