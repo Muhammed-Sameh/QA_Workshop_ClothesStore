@@ -60,10 +60,9 @@ jobs:
           echo "Merna Hesham" >> release.txt
           echo "Mohamed Sameh" >> release.txt
 
-      - name: Commit Release File
+      - name: Commit Release File and Create Branch
         run: |
-          git config --global user.email "mernahesham@gmail.com"  
-          git config --global user.name "GitHub Actions"
+          git checkout -b release-branch  # Create and switch to a new branch named release-branch
           git add release.txt
           git commit -m "Create release file for version 2.0.0"
-          git push
+          git push origin release-branch  # Push the new branch to remote repository
