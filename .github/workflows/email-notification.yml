@@ -1,0 +1,73 @@
+name: Release Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create_release_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config user.email "mernahesham21010@gmail.com"
+          git config user.name "Merna Hesham"
+
+      - name: Create Release File
+        run: |
+          echo "Online Clothes Store" > release.txt
+          echo "Release Version 2.0.0" >> release.txt
+          echo "" >> release.txt
+          echo "Project Overview" >> release.txt
+          echo "The Online Clothing Store project is proud to announce its initial release, offering a comprehensive web portal serving as an interface for clients and suppliers. This release lays the foundation for the project." >> release.txt
+          echo "" >> release.txt
+          echo "User Categories:" >> release.txt
+          echo "Client: Individuals engaging in purchasing activities within the store." >> release.txt
+          echo "Admin: Responsible for overseeing system administration and management tasks." >> release.txt
+          echo "Supplier: Entities contributing products to enrich the store's offerings." >> release.txt
+          echo "" >> release.txt
+          echo "Key Features:" >> release.txt
+          echo "Client Registration: Clients can easily register by providing essential details such as email, mobile number, and name, ensuring a smooth onboarding process." >> release.txt
+          echo "Secure Login: Clients can securely log in using either their email or phone number along with a password, prioritizing user data protection." >> release.txt
+          echo "Transaction History: Clients gain access to their transaction history, enabling them to track their purchases conveniently." >> release.txt
+          echo "Products: Store provides products such as clothes or accessories, with details like product name, description, price, colors, sizes, images." >> release.txt
+          echo "Clients: should have the ability to buy any product from the store." >> release.txt
+          echo "Supplier Integration: Suppliers are empowered to add new products to the store, fostering collaboration and diversity in the product offerings." >> release.txt
+          echo "Administrative Control: Admins wield the authority to manage the system efficiently, with capabilities such as deleting client data and products, and viewing client transaction history." >> release.txt
+          echo "" >> release.txt
+          echo "Constraints:" >> release.txt
+          echo "The system is accessible through web-based or PC-based platforms." >> release.txt
+          echo "Unique user IDs are implemented to uphold security standards." >> release.txt
+          echo "Administrative functionalities are in place for comprehensive system management." >> release.txt
+          echo "Supplier features are integrated to facilitate selling transactions seamlessly." >> release.txt
+          echo "" >> release.txt
+          echo "Milestones:" >> release.txt
+          echo "Version 1" >> release.txt
+          echo "✅ Software Requirement Specification SRS & Rquirement Traceability Matrix RTM" >> release.txt
+          echo "✅ PROJECT MANAGEMENT PLAN PMP" >> release.txt
+          echo "✅ Configuration Management Plan CMP" >> release.txt
+          echo "✅ Software Interative Questionary SIQ" >> release.txt
+          echo "✅ Timeline and task assignment" >> release.txt
+          echo "" >> release.txt
+          echo "Project Team Members:" >> release.txt
+          echo "Manager: Eng. Mohamed Hassan" >> release.txt
+          echo "Coach: Eng. Amr Mokhtar" >> release.txt
+          echo "Project Manager: Samar Salah" >> release.txt
+          echo "Project Team:" >> release.txt
+          echo "Sohaila Ashraf" >> release.txt
+          echo "Eslam Elkersh" >> release.txt
+          echo "Amir Ahmed" >> release.txt
+          echo "Merna Hesham" >> release.txt
+          echo "Mohamed Sameh" >> release.txt
+
+      - name: Commit Release File and Create Branch
+        run: |
+          git checkout -b release-branch  
+          git add release.txt
+          git commit -m "Create release file for version 2.0.0"
+          git push origin release-branch  # Push the new branch to remote repository
