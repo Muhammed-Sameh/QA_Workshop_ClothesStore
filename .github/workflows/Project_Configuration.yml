@@ -13,6 +13,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Set up Git
+        run: |
+          git config user.email "mohamedsamehshatta@gmail.com"
+          git config user.name "Mohamed Sameh"
+
       - name: Create Release File
         run: |
           echo "Online Clothes Store" > release.txt
@@ -43,7 +48,8 @@ jobs:
           echo "" >> release.txt
           echo "Milestones:" >> release.txt
           echo "Version 1" >> release.txt
-          echo "✅ Software Requirement Specification SRS & Rquirement Traceability Matrix RTM" >> release.txt
+          echo "✅ Software Requirement Specification (SRS)" >> release.txt
+          echo "✅ Rquirement Traceability Matrix (RTM)" >> release.txt
           echo "✅ PROJECT MANAGEMENT PLAN PMP" >> release.txt
           echo "✅ Configuration Management Plan CMP" >> release.txt
           echo "✅ Software Interative Questionary SIQ" >> release.txt
@@ -62,7 +68,7 @@ jobs:
 
       - name: Commit Release File and Create Branch
         run: |
-          git checkout -b release-branch  # Create and switch to a new branch named release-branch
+          git checkout -b release-branch  
           git add release.txt
           git commit -m "Create release file for version 2.0.0"
           git push origin release-branch  # Push the new branch to remote repository
