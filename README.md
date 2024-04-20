@@ -1,8 +1,6 @@
-# QA_Workshop_ClothesStore
-
 ### **Online Clothes Store**
 
-**Release V2.0.0**
+**Release Version 2.0.0**
 
 ---
 
@@ -44,8 +42,8 @@ The Online Clothing Store project is proud to announce its initial release, offe
 ### **Milestones**
 
 - **Version 1**
-  - [✅ Software Requirement Specification (SRS)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Project%20Management/QA_ClothesStore_SRS%20%26%20RTM.xlsx)
-  - [✅ Rquirement Traceability Matrix (RTM)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Project%20Management/QA_ClothesStore_SRS%20%26%20RTM.xlsx)
+  - [✅ Software Requirement Specification (SRS)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Project%20Management/QA_ClothesStore_SRS.xlsx)
+  - [✅ Rquirement Traceability Matrix (RTM)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Project%20Management/QA_ClothesStore_RTM.xlsx)
   - [✅ PROJECT MANAGEMENT PLAN PMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889477/PROJECT.MANAGEMENT.PLAN.docx)
   - [✅ Configuration Management Plan CMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889479/Configuration.Management.Plan.docx)
   - [✅ Software Interative Questionary SIQ](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889731/QA_ClothesStore_SIQ.1.xlsx)
@@ -63,4 +61,3 @@ The Online Clothing Store project is proud to announce its initial release, offe
   - [Amir Ahmed](@amirhefny )
   - [Merna Hesham](@MernaHesham10 )
   - [Mohamed Sameh](@Muhammed-Sameh )
-
