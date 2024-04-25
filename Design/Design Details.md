@@ -5,13 +5,15 @@
 ### **Phase Overview**
 - **High Level Design:**
     - Sequence Diagram
+ 
+    - Use Case Diagram
 
     - High Level Description
 
     - ERD diagram
 
 - **Low Level Design:**
-    - Wireframe
+    - Wireframe and UI Design
 
     - Class Diagram + Interfaces
 
