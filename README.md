@@ -1,7 +1,5 @@
 ### **Online Clothes Store**
 
-**Release Version 2.0.0**
-
 ---
 
 ### **Project Overview**
@@ -38,16 +36,61 @@ The Online Clothing Store project is proud to announce its initial release, offe
 - Supplier features are integrated to facilitate selling transactions seamlessly.
 
 ---
+### **Phase Overview**
+- **High Level Design:**
+    - Sequence Diagram
+ 
+    - Use Case Diagram
+
+    - High Level Description
+
+    - ERD Diagram
+
+- **Low Level Design:**
+    - Wireframe and UI Design
+
+    - Class Diagram + Interfaces
+
+    - Flow Charts
+      
+- **Updated Effort Estimation**
+
+- Updated RTM
+
+- Updated SRS
+
+- Updated SIQ
+
+- Updated CMP
+
+- Updated Timeline and Task Assignment
+
+- Updated Effort Estimation
+---
 
 ### **Milestones**
 
-- **Version 1**
-  - [✅ Software Requirement Specification (SRS)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Project%20Management/QA_ClothesStore_SRS.xlsx)
-  - [✅ Rquirement Traceability Matrix (RTM)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Project%20Management/QA_ClothesStore_RTM.xlsx)
+**Updated Documents**
+  - [✅ Software Requirement Specification (SRS)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_ClothesStore_SRS.xlsx)
+  
+  - [✅ Rquirement Traceability Matrix (RTM)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_ClothesStore_RTM.xlsx)
+  
   - [✅ PROJECT MANAGEMENT PLAN PMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889477/PROJECT.MANAGEMENT.PLAN.docx)
+  
   - [✅ Configuration Management Plan CMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889479/Configuration.Management.Plan.docx)
-  - [✅ Software Interative Questionary SIQ](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889731/QA_ClothesStore_SIQ.1.xlsx)
+  
+  - [✅ Software Interative Questionary SIQ](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_ClothesStore_SIQ.xlsx)
+
   - [✅ Timeline and task assignment](https://www.taskade.com/d/3uyN1jPwH7qgDxFk?share=view&view=DNkGNpH5wgazwPmi&as=actionsheet)
+
+  - [✅ Effort Estimation](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_OnineClothes_EffortEstimation.xlsx)
+
+**Added Files**
+  - [✅ High Level Design](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/tree/main/Design/High%20Level%20Design)
+  
+  - [✅ Low Level Design](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/tree/main/Design/Low%20Level%20Design)
+
+  - [✅ Design Details](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/Design%20Details.md)
 ---
 
 ### **Project Team Members**
