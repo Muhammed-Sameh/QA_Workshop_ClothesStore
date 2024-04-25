@@ -18,6 +18,8 @@
     - Class Diagram + Interfaces
 
     - Flow Charts
+      
+- **Updated Effort Estimation**
 
 - **Updated RTM**
 
