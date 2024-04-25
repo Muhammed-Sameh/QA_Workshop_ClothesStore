@@ -10,7 +10,7 @@
 
     - High Level Description
 
-    - ERD diagram
+    - ERD Diagram
 
 - **Low Level Design:**
     - Wireframe and UI Design
