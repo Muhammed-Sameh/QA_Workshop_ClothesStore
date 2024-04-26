@@ -70,29 +70,27 @@ The Online Clothing Store project is proud to announce its initial release, offe
 
 ### **Milestones**
 
-**Milestone 3**
-
 **Updated Documents**
-  - [✅ Software Requirement Specification (SRS)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_ClothesStore_SRS.xlsx)
+  - [✅ Software Requirement Specification (SRS)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/master/Design/QA_ClothesStore_SRS.xlsx)
   
-  - [✅ Rquirement Traceability Matrix (RTM)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_ClothesStore_RTM.xlsx)
+  - [✅ Rquirement Traceability Matrix (RTM)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/master/Design/QA_ClothesStore_RTM.xlsx)
   
-  - [✅ PROJECT MANAGEMENT PLAN PMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889477/PROJECT.MANAGEMENT.PLAN.docx)
+  - [✅ PROJECT MANAGEMENT PLAN PMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/master/Project%20Management/PROJECT%20MANAGEMENT%20PLAN%20%5Bv2%5D.docx)
   
-  - [✅ Configuration Management Plan CMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/files/14889479/Configuration.Management.Plan.docx)
+  - [✅ Configuration Management Plan CMP](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/master/Design/Configuration%20Management%20Plan.docx)
   
-  - [✅ Software Interative Questionary SIQ](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_ClothesStore_SIQ.xlsx)
+  - [✅ Software Interative Questionary SIQ](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/master/Design/QA_ClothesStore_SIQ.xlsx)
 
   - [✅ Timeline and task assignment](https://www.taskade.com/d/3uyN1jPwH7qgDxFk?share=view&view=DNkGNpH5wgazwPmi&as=actionsheet)
 
-  - [✅ Effort Estimation](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_OnineClothes_EffortEstimation.xlsx)
+  - [✅ Effort Estimation](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/master/Design/QA_OnineClothes_EffortEstimation.xlsx)
 
 **Added Files**
-  - [✅ High Level Design](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/tree/main/Design/High%20Level%20Design)
+  - [✅ High Level Design](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/tree/master/Design/High%20Level%20Design)
   
-  - [✅ Low Level Design](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/tree/main/Design/Low%20Level%20Design)
+  - [✅ Low Level Design](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/tree/master/Design/Low%20Level%20Design)
 
-  - [✅ Design Details](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/Design%20Details.md)
+  - [✅ Design Details](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/master/Design/Design%20Details.md)
 ---
 
 ### **Project Team Members**
