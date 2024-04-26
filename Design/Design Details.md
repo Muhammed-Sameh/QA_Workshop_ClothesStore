@@ -4,8 +4,6 @@
 
 ### **Phase Overview**
 - **High Level Design:**
-    - Sequence Diagram
- 
     - Use Case Diagram
 
     - High Level Description
