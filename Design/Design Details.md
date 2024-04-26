@@ -6,16 +6,20 @@
 - **High Level Design:**
     - Sequence Diagram
 
+    - Use Case Diagram
+
     - High Level Description
 
-    - ERD diagram
+    - ERD Diagram
 
 - **Low Level Design:**
-    - Wireframe
+    - Wireframe and UI Design
 
     - Class Diagram + Interfaces
 
     - Flow Charts
+      
+- **Updated Effort Estimation**
 
 - **Updated RTM**
 
@@ -24,7 +28,3 @@
 - **Updated SIQ**
 
 - **Updated CMP**
-
-
-
-
