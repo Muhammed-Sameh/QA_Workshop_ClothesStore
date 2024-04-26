@@ -1,7 +1,5 @@
 ### **Online Clothes Store**
 
-**Release Version 3.0.0**
-
 ---
 
 ### **Project Overview**
