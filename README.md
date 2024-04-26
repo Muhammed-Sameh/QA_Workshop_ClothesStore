@@ -70,6 +70,8 @@ The Online Clothing Store project is proud to announce its initial release, offe
 
 ### **Milestones**
 
+**Milestone 3**
+
 **Updated Documents**
   - [✅ Software Requirement Specification (SRS)](https://github.com/Muhammed-Sameh/QA_Workshop_ClothesStore/blob/main/Design/QA_ClothesStore_SRS.xlsx)
   
