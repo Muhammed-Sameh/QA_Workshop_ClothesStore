@@ -1,0 +1,134 @@
+- in base.html:
+in the navbar part, right after "about",
+<!-- Grid column -->
+              <div class="col-md-1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="btn text-white" style="font-weight: bolder;">|</a>
+                </h6>
+              </div>
+              <!-- End Of Grid column -->
+            
+              <!-- Grid column -->
+              <div class="col-md-1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="{{url_for('MyFavourites_Page')}}" class="btn text-white" style="font-weight: bolder;">My Favourites</a>
+                </h6>
+              </div>
+              <!-- End Of Grid column -->
+
+
+
+
+- in browse_movie.html:
+right under the comment part, 
+<h5><a class="nav-link" href="{{url_for('Add_Favourite')}}" style="text-decoration: none;"><b>Add To Favourites</b></a></h5>
+
+
+
+- new html file (AddFavourites.html):
+{% extends 'base.html' %}
+
+<h1>{% block title %}Add To Favourites{% endblock %}</h1>
+
+{% block header %}<h1>Pleaes Full All field </h1>{% endblock %}
+
+{% block content %}
+<!--Div-->
+<div style="margin: auto; margin-top: 10%; width: 50%; padding: 5%; background-color: #212529; color: white; border-radius: 20% 3%;">
+    <!--Form-->
+    <form method="post" >
+        <!--First Div-->
+        <div class="mb-3">
+          <h2><b>Movie Name</b></h2>
+          <input name ="name" type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <!--End Of First Div-->
+        
+        <!--Second Div-->
+        <div class="mb-3">
+          <h2><b>Email</b></h2>
+          <input name ="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <!--End Of Seconf Div--> 
+        
+        <!--Submit Btn--> 
+        <button type="submit" class="btn" style="font-weight: bolder; margin-top: 5%; background-color:white; font-size: x-large;">Add</button>
+        <!--End Of Submit Btn-->
+      
+      </form>
+      <!--End Of Form-->
+</div>
+<!--End Of Div-->
+{% endblock %}
+
+
+
+- new html file (MyFavLogin.html):
+{% extends 'base.html' %}
+
+<h1>{% block title %}My Favourites Login{% endblock %}</h1>
+
+{% block content %}
+<!--Div-->
+<div style="margin: auto; margin-top: 10%; width: 50%; padding: 5%; background-color: #212529; color: white; border-radius: 20% 3%;">
+    <!--Form-->
+    <form method="post" >
+        <!--Second Div-->
+        <div class="mb-3">
+          <h2><b>Email</b></h2>
+          <input name ="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <!--End Of Seconf Div--> 
+        
+        <!--Submit Btn--> 
+        <button type="submit" class="btn" style="font-weight: bolder; margin-top: 5%; background-color:white; font-size: x-large;">Proceed</button>
+        <!--End Of Submit Btn-->
+      
+      </form>
+      <!--End Of Form-->
+</div>
+<!--End Of Div-->
+{% endblock %}
+
+
+
+- new html file (MyFave.html):
+{% extends 'base.html' %}
+
+<h1>{% block title %}My Favourites{% endblock %}</h1>
+
+{% block content %}
+
+    {% for row in record %}
+
+        <!--Card Div-->
+        <div class="card text-white bg-dark mb-3" style="width: 50%; margin: auto; margin-top: 10%;">
+            
+            <!--Card Header-->
+            <div class="card-header" style="font-weight: bolder;">
+                <a class="card-title" href="{{url_for('Browse_movie', name = row.name)}}" style="text-decoration: none; "> {{ row['name']}}</a></div>
+                
+                <!--Card Body Div-->
+                <div class="card-body">
+                    <h5 class="card-title"><b>Type:</b> {{ row['details']}}</h5>
+                    <h5 class="card-title"><b>Release Year:</b> {{ row['release_year']}}</h5>
+                    
+                    <!--Card Title-->
+                    <div style="width: 25%;" class="card-title">
+                        <img  src="static/images/{{row['name']}}.jpg" />
+                    </div>
+                    <!--End Of Card Title Div-->
+
+                </div>
+                <!--End Of Card Body-->
+
+            </div>
+            <!--End Of Card Header-->
+
+        </div>
+        <!--End Of Card Div-->
+
+    {% endfor %}
+{% endblock %}
+
+

@@ -1,1 +1,83 @@
 
+{% extends 'Base Login.html' %}
+
+<h1>{% block title %}Log IN{% endblock %}</h1>
+
+{% block content %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../static/css/style.css">
+
+
+<!--Container-->
+<div class="container-fluid">
+
+    
+    <!--Row-->
+    <div class="row">
+        <!--Section 1-->
+        <section class="vh-100" style="margin-bottom: 10%;">
+            
+            <!--Sub-Container-->
+            <div class="container-fluid h-custom">
+
+                <!--Row-->
+                <div class="row d-flex justify-content-center align-items-center h-100">
+
+                    <!--Col 1-->
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <img src="../static/images/Login Email and Pw.png"
+                            class="img-fluid" alt="Sample image">
+                    </div>
+                    <!--End Of Col 1-->
+
+                    <!--Col 2-->
+                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1" style="margin: -63px 0px 0px 50px;">
+                        <!--Form-->
+                        <form method="post" action="{{url_for('LoginPage')}}" style="width: 23rem;">
+
+                            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log In</h3>
+                
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Email address</label>
+
+                                <input name="email" type="email" id="form3Example3" class="form-control form-control-lg" />
+                            </div>
+                
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Password</label>
+
+                                <input name="password" type="password" id="form3Example4" class="form-control form-control-lg" />
+                            </div>
+                
+
+                            <div class="pt-1 mb-4">
+                            <p style="color: #8A33FD; text-align: left; font-size: small;"><b>{{msg}}</b></p>
+
+                              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-lg btn-primary" 
+                              type="submit" style="padding-left: 2.5rem; padding-right: 2.5rem; color: white; background-color: #8A33FD; font-size: medium;">Log In</button>
+                            </div>
+                
+                            <p class="small mb-5 pb-lg-2">Don't have an account? <a
+                                class="text-muted" href="{{url_for('SignupPage')}}" class="link-danger">Sign Up</a></p>
+                          </form>
+                        
+                        <!--End Of Form-->
+
+                    </div>
+                    <!--End Of Col 2-->
+
+                </div>
+                <!--End Of Row-->
+
+            </div>
+            <!--End Of Sun-Container-->
+
+        </section>
+        <!--Section 1-->
+
+    </div>
+    <!--End Of Row-->
+
+</div>
+<!--End OF Container-->
+{% endblock %}
