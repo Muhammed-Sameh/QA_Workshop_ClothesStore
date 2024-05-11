@@ -1,0 +1,72 @@
+
+{% extends 'base.html' %}
+
+<h1>{% block title %}Welcome To Home{% endblock %}</h1>
+
+{% block content %}
+<link rel="stylesheet" href="../static/css/style.css">
+
+<div>
+    <div class="card" style="width: 100%; margin: auto;">
+        <img src="../static/images/Client Home.png" style="width:60%; height: 500px; margin: auto;" alt="main image">
+        <div class="centered">
+            Welcome
+            <br>To <br>
+            Our Store
+        </div>
+    </div>
+</div>
+
+<!--Our Movies-->
+<div class="container-fluid" style="margin: 5% 0% 2% 0% ;">
+
+    <!--Row-->
+    <div class="row" style="padding: 5%; ">
+        <p style="text-align: center; font-size: larger; word-spacing: 4px; margin-bottom: 7%;"><a
+                style="text-decoration: none;" href="{{url_for('clientMain')}}">All Products</a> | <a
+                style="text-decoration: none;" href="{{url_for('clientClothes')}}">Clothes</a> | <a style="color: #8A33FD; text-decoration: none;"
+                href="{{url_for('clientAccessories')}}">Accessories</a></p>
+        <h1 style="text-align: center; ">All Products</h1>
+        <p style="text-align: center; color: #898989; margin-bottom: 4%;">Lorem ipsum dolor sit amet consectetur. Eaque
+            quidem expedita officiis voluptas dicta <br>ratione
+            iure officia? Voluptate iure voluptates aut id facere architecto doloremque quasi, fuga laudantium.</p>
+
+        {% for row in rows %}
+        <!--Card-->
+        <div class="card" style="width: 25%; font-weight: bolder;">
+            <img src="..//static//images//{{row['name']}}.png" style="height: 200px; width: 100%;" class="card-img-top"
+                alt="Product Image">
+
+            <!--Card Body-->
+            <div class="card-body">
+                <a class="card-title" style="text-decoration: none;"
+                    href="{{url_for('clientAddToCart', name = row.name)}}">{{ row['name']}}</a>
+
+                <a class="card-title" href="#"
+                    style="background-color: #e6e6e6; padding: 6px 10px; text-decoration: none; float: right;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </a>
+
+                <p class="card-text"><small class="text-muted">{{ row["description"]}}</small></p>
+                <span class="card-text">{{ row["price"]}}</span>
+                <span class="card-text" style="float: right; clear: both; padding: 6px 10px;"><small
+                        class="text-muted">{{
+                        row["quantity"]}}</small></span>
+
+            </div>
+            <!--End OF Card Body-->
+        </div>
+        <!--End Of Card-->
+        {% endfor %}
+
+    </div>
+    <!--End Of Row-->
+
+</div>
+<!--End Of Our Movies-->
+
+{% endblock %}

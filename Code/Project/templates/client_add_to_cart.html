@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+<h1>{% block title %}View Product{% endblock %}</h1>
+
+{% block content %}
+<link rel="stylesheet" href="../static/css/style.css">
+<script src="../static/js/script.js"></script>
+
+<form action="{{ url_for('clientAddToCart', name=row.name) }}" method="POST">
+    <div class="container">
+        <div class="product-details">
+            <img src="../static/images/{{row.name}}.png" alt="Product Image">
+            <div class="details">
+                <h2>{{ row['name']}}</h2>
+                <p><b>{{ row['description']}}</b></p>
+                <p><b>{{ row['price']}}</b></p>
+                <div class="options">
+                    <label for="size"><b>Size: {{ row['sizes']}}</b></label>
+                    <div class="size-buttons">
+                        <button class="size-button" value="small">S</button>
+                        <button class="size-button" value="medium">M</button>
+                        <button class="size-button" value="large">L</button>
+                        <button class="size-button" value="xlarge">XL</button>
+                    </div>
+                    <label for="color"><b>Color: {{ row['color']}}</b></label>
+                    <div class="color-buttons">
+                        <button class="color-button red"></button>
+                        <button class="color-button blue"></button>
+                        <button class="color-button green"></button>
+                    </div>
+                    <div><label for="quantity"><b>Quantity</b></label>
+                        <div>
+                            <div class="quantity">
+                                <button class="minus">-</button>
+                                <input type="text" id="quantityInput" value="{{ row['quantity']}}">
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+</form>
+<!--Form-->
+
+<!--<form action="{{ url_for('clientAddToCart', name=row.name) }}" method="POST">
+    <div class="row">
+        <div class="col-4 imgDiv">
+            <input type="file" id="photoInput" accept="image/*">
+            <img id="photoPreview" src="..//static//images//{{row.name}}.png" alt="Preview" style="display: none; max-width: 100%; max-height: 300px;">
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-12 form-group">
+                    <label for="name" class="form-label">Product Name</label>
+                    <p>{{ row['name']}}</p>
+                </div>
+                <div class="col-12 form-group">
+                    <label for="description" class="form-label">Product Description</label>
+                    <p>{{row.description}}</p>
+                </div>
+                <div class="col-12 form-group">
+                    <label for="price" class="form-label">Product Price</label>
+                    <p>{{row.price}}</p>
+
+                </div>
+                <div class="col-12 form-group">
+                    <label for="size" class="form-label">Size</label>
+                    <div class="size-options">
+                        <label class="size-option">
+                            <input type="radio" name="size" value="M" checked>
+                            <span>M</span>
+                        </label>
+                        <label class="size-option">
+                            <input type="radio" name="size" value="L">
+                            <span>L</span>
+                        </label>
+                        <label class="size-option">
+                            <input type="radio" name="size" value="XL">
+                            <span>XL</span>
+                        </label>
+                        <label class="size-option">
+                            <input type="radio" name="size" value="XXL">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 form-group">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <div class="quantity-selector">
+                        <span class="quantity-btn minus">-</span>
+                        <input type="text" id="quantity" name="quantity" value="1" readonly>
+                        <span class="quantity-btn plus">+</span>
+                    </div>
+                </div>
+                <div class="col-12 form-group">
+                    <label for="color" class="form-label">Color</label>
+                    <input type="text" class="form-control" id="color">
+                </div>
+
+                <div class="col-12 form-group">
+                    <button type="submit" class="btn btn-primary">
+                    <a href="#">
+                        Add to Cart
+                    </a></button>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</form>-->
+<!--<form action="{{ url_for('clientAddToCart', name=row.name) }}" method="POST" >
+
+    <!--Main card--
+    <div class="card text-white bg-dark mb-3" style="width: 60%; margin:auto; margin-top: 10%; padding: 2%; border-radius: 5%;">
+      
+        <!--card-header--
+        <div class="card-header" style="font-weight: bolder; font-size: xx-large;">{{ row['name']}}</div>
+        <!--End OF card-header--
+
+        <!--card-body--
+        <div class="card-body">
+          <h5 class="card-title" ><b>Type:</b> {{ row['description']}}</h5>
+          <h5 class="card-title"><b>Release Year:</b> {{ row['price']}}</h5>
+          <div class="card-title"><img src="..//static//images//{{row.name}}.png" width="100%" style="padding: 4% ;"/></div>
+          <h5 class="card-title" style="font-size: x-large;"><b>Comments:</b></h5>
+          <br>
+
+          {% for r in data %}
+            <!--Card--
+            <div class="card" style=" font-weight: bolder; width: 100%; margin-bottom: 5%; border-radius: 5%;">                
+                <!--Card Body--
+                <div class="card-body">
+                    <p class="card-text"><small class="text-muted">{{ r["comment_text"]}}</small></p>
+                </div>
+                <!--End OF Card Body--
+            
+            </div>
+            <!--End Of Card--
+            {% endfor %}
+
+
+          <hr>
+          <h5><a class="nav-link" href="{{url_for('Add_comment')}}" style="text-decoration: none; "><b>Add New Comment</b></a></h5>
+          <h5><a class="nav-link" href="{{url_for('Add_favorite')}}" style="text-decoration: none;"><b>Add To Favorite List</b></a></h5>
+
+        </div>
+        <!--End Of card-body-->
+
+</div>
+<!--End Of Main card-->
+
+</form>
+<!--End Of Form-->
+{% endblock %}

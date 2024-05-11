@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+<h1>{% block title %}Search{% endblock %}</h1>
+
+{% block content %}
+
+    {% for row in record %}
+
+        <!--Card Div-->
+        <div class="card text-white bg-dark mb-3" style="width: 50%; margin: auto; margin-top: 10%;">
+            
+            <!--Card Header-->
+            <div class="card-header" style="font-weight: bolder;">
+                <a class="card-title" href="{{url_for('Browse_movie', name = row.name)}}" style="text-decoration: none; "> {{ row['name']}}</a></div>
+                
+                <!--Card Body Div-->
+                <div class="card-body">
+                    <h5 class="card-title"><b>Type:</b> {{ row['details']}}</h5>
+                    <h5 class="card-title"><b>Release Year:</b> {{ row['release_year']}}</h5>
+                    
+                    <!--Card Title-->
+                    <div style="width: 25%;" class="card-title">
+                        <img  src="static/images/{{row['name']}}.jpg" />
+                    </div>
+                    <!--End Of Card Title Div-->
+
+                </div>
+                <!--End Of Card Body-->
+
+            </div>
+            <!--End Of Card Header-->
+
+        </div>
+        <!--End Of Card Div-->
+
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+<h1>{% block title %}Favorite List{% endblock %}</h1>
+
+{% block content %}
+    
+
+<!--Form-->
+<form method="POST" >
+    <h1 style="text-align: center; margin-top: 5%; font-weight: bolder; ">Your Favorite List</h1>
+
+    <!--Main card-->
+    <div class="card text-white bg-dark mb-3" style="width: 60%; margin:auto; margin-top: 3%; padding: 2%; border-radius: 5%;">
+
+          {% for r in row %}
+            <!--Card-->
+            <div class="card" style=" font-weight: bolder; width: 100%;">                
+                <!--Card Body-->
+                <div class="card-body">
+                    <p class="card-text" style="color: black;">{{ r["movie_name"]}}</p>
+                </div>
+                <!--End OF Card Body-->
+            
+            </div>
+            <br>
+            <!--End Of Card-->
+            {% endfor %}
+            
+        </div>
+        <!--End Of card-body-->
+    
+    </div>
+    <!--End Of Main card-->
+
+</form>
+<!--End Of Form-->
+{% endblock %}
